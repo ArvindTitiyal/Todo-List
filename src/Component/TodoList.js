@@ -20,7 +20,7 @@ const TodoList = () => {
   // Fetch todos from an API
   const fetchTodos = async () => {
     try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=4');
+      const response = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=5');
       const todos = await response.json();
       setTasks(todos);
       setIsLoading(false);
